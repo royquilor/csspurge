@@ -21,7 +21,7 @@
     "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.3",
-    "gulp-uncss": "^1.0.4",
+    "gulp-uncss": "^1.0.5",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.5",
     "highlight.js": "^9.2.0"

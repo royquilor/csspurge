@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+    uncss = require('gulp-uncss'),
     cssnano = require('gulp-cssnano'),
     csslint = require('gulp-csslint'),
     sourcemaps = require('gulp-sourcemaps'),
@@ -51,7 +52,7 @@ gulp.task('styles', function() {
 
 //Compress and combine JS files
 gulp.task('js', function() {
- return gulp.src('js/*.js')
+ return gulp.src(['js/*.js','js/atoms/*.js'])
   .pipe(concat('main.js'))
   .pipe(uglify())
   .pipe(rename('main.min.js'))
@@ -76,6 +77,9 @@ gulp.task('workflow', function () {
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false
+    }))
+    .pipe(uncss({
+      html: ['index.html']
     }))
     .pipe(cssnano())
     .pipe(sourcemaps.write('./'))
