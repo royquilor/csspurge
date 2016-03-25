@@ -7,10 +7,23 @@ body {
  color: $black;
  line-height: 1.5;
  font-size: 16px;
- padding: 0.5rem;
+}
+
+@media only screen and (min-width: 48em) {
+ body {
+ font-size: 16px;
+ }
+}
+
+@media only screen and (min-width: 64em) {
+ body {
+  font-size: 18px;
+ }
 }
 
 hr {
  margin-bottom: 1rem;
+ border: 0;
+ background-color: $silver;
+ height:1px;
 }
-

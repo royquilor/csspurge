@@ -1,0 +1,102 @@
+#league {
+    overflow:auto;
+}
+
+table {
+    border-top: 1px solid $silver;
+    text-align: left;
+    width: 100%;
+    border-collapse: separate;
+}
+
+caption {
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding: .5rem;
+    font-weight: 400;
+}
+
+td,
+th {
+    padding: .3rem 1rem .3rem .5rem;
+    text-align: right;
+    font-size: .875rem;
+}
+
+tr {
+    cursor: pointer;
+}
+
+td {
+    padding-right: 1.2rem;
+}
+
+.selected td {
+    color: $white;
+}
+
+.selected svg {
+    fill: $white;
+}
+
+.bbc.selected td,
+.apple.selected td,
+.guardian.selected td,
+.wikipedia.selected td {
+    background-color: $black;
+}
+
+th span {
+    position: absolute;
+    right: -10px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    top: 5px;
+}
+
+.asc span,
+.desc span {
+    background: url("../i/chevron-down.svg") no-repeat 0 0;
+    background-size: 10px auto;
+}
+
+.desc span {
+    background: url("../i/chevron-up.svg") no-repeat 0 -1px;
+    background-size: 10px auto;
+}
+
+.ls {
+    text-align: left;
+}
+
+th {
+    xbackground: $light-gray;
+    border-bottom: 1px solid $silver;
+    border-right: 1px solid $silver;
+}
+
+tr:nth-child(even) td {
+    background: $light-gray;
+}
+
+th button {
+    background: $white;
+    border: 0;
+    padding: 0 .2rem 0 0;
+    margin: 0;
+    font-weight: 500;
+    text-align: right;
+    width: 100%;
+    position: relative;
+}
+
+thead {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 0;
+    background: white;
+}
