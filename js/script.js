@@ -52,7 +52,7 @@ for(var count=0; count < position.length; count++) {
 };
 // sites
 for(var count=0; count < sites.length; count++) {
-    sites.item(count).setAttribute("class", "ls");
+    sites.item(count).setAttribute("class", "ls tl");
 };
 // float
 for(var count=0; count < float.length; count++) {

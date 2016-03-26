@@ -288,10 +288,13 @@ $youtube:       #cd201f;
     svg {
         fill: $airbnb;
     }
-    &.selected td,
     progress[value]::-webkit-progress-value {
         background-color: $airbnb;
     }
+}
+/* uncss:ignore */
+.airbnb.selected td {
+    background-color: $airbnb;
 }
 
 .dribbble {
@@ -302,10 +305,13 @@ $youtube:       #cd201f;
     svg {
         fill: $dribbble;
     }
-    &.selected td,
     progress[value]::-webkit-progress-value {
         background-color: $dribbble;
     }
+}
+/* uncss:ignore */
+.dribbble.selected td {
+    background-color: $dribbble;
 }
 
 .etsy {
@@ -316,10 +322,13 @@ $youtube:       #cd201f;
     svg {
         fill: $etsy;
     }
-    &.selected td,
     progress[value]::-webkit-progress-value {
         background-color: $etsy;
     }
+}
+/* uncss:ignore */
+.etsy.selected td {
+    background-color: $etsy;
 }
 
 .facebook {
@@ -330,10 +339,13 @@ $youtube:       #cd201f;
     svg {
         fill: $facebook;
     }
-    &.selected td,
     progress[value]::-webkit-progress-value {
         background-color: $facebook;
     }
+}
+/* uncss:ignore */
+.facebook.selected td {
+    background-color: $facebook;
 }
 
 .github {
@@ -344,10 +356,13 @@ $youtube:       #cd201f;
     svg {
         fill: $github;
     }
-    &.selected td,
     progress[value]::-webkit-progress-value {
         background-color: $github;
     }
+}
+/* uncss:ignore */
+.github.selected td {
+    background-color: $github;
 }
 
 .google {
@@ -358,10 +373,13 @@ $youtube:       #cd201f;
     svg {
         fill: $google;
     }
-    &.selected td,
     progress[value]::-webkit-progress-value {
         background-color: $google;
     }
+}
+/* uncss:ignore */
+.google.selected td {
+    background-color: $google;
 }
 
 .kickstarter {
@@ -372,10 +390,13 @@ $youtube:       #cd201f;
     svg {
         fill: $kickstarter;
     }
-    &.selected td,
     progress[value]::-webkit-progress-value {
         background-color: $kickstarter;
     }
+}
+/* uncss:ignore */
+.kickstarter.selected td {
+    background-color: $kickstarter;
 }
 
 .medium {
@@ -386,10 +407,13 @@ $youtube:       #cd201f;
     svg {
         fill: $medium;
     }
-    &.selected td,
     progress[value]::-webkit-progress-value {
         background-color: $medium;
     }
+}
+/* uncss:ignore */
+.medium.selected td {
+    background-color: $medium;
 }
 
 .paypal {
@@ -400,10 +424,13 @@ $youtube:       #cd201f;
     svg {
         fill: $paypal;
     }
-    &.selected td,
     progress[value]::-webkit-progress-value {
         background-color: $paypal;
     }
+}
+/* uncss:ignore */
+.paypal.selected td {
+    background-color: $paypal;
 }
 
 .pinterest {
@@ -414,10 +441,13 @@ $youtube:       #cd201f;
     svg {
         fill: $pinterest;
     }
-    &.selected td,
     progress[value]::-webkit-progress-value {
         background-color: $pinterest;
     }
+}
+/* uncss:ignore */
+.pinterest.selected td {
+    background-color: $pinterest;
 }
 
 .slack {
@@ -428,10 +458,13 @@ $youtube:       #cd201f;
     svg {
         fill: $slack;
     }
-    &.selected td,
     progress[value]::-webkit-progress-value {
         background-color: $slack;
     }
+}
+/* uncss:ignore */
+.slack.selected td {
+    background-color: $slack;
 }
 
 .stackoverflow {
@@ -442,10 +475,13 @@ $youtube:       #cd201f;
     svg {
         fill: $stackoverflow;
     }
-    &.selected td,
     progress[value]::-webkit-progress-value {
         background-color: $stackoverflow;
     }
+}
+/* uncss:ignore */
+.stackoverflow.selected td {
+    background-color: $stackoverflow;
 }
 
 .stripe {
@@ -456,10 +492,13 @@ $youtube:       #cd201f;
     svg {
         fill: $stripe;
     }
-    &.selected td,
     progress[value]::-webkit-progress-value {
         background-color: $stripe;
     }
+}
+/* uncss:ignore */
+.stripe.selected td {
+    background-color: $stripe;
 }
 
 .twitter {
@@ -470,10 +509,13 @@ $youtube:       #cd201f;
     svg {
         fill: $twitter;
     }
-    &.selected td,
     progress[value]::-webkit-progress-value {
         background-color: $twitter;
     }
+}
+/* uncss:ignore */
+.twitter.selected td {
+    background-color: $twitter;
 }
 
 .yahoo {
@@ -484,10 +526,13 @@ $youtube:       #cd201f;
     svg {
         fill: $yahoo;
     }
-    &.selected td,
     progress[value]::-webkit-progress-value {
         background-color: $yahoo;
     }
+}
+/* uncss:ignore */
+.yahoo.selected td {
+    background-color: $yahoo;
 }
 
 .youtube {
@@ -498,10 +543,13 @@ $youtube:       #cd201f;
     svg {
         fill: $youtube;
     }
-    &.selected td,
     progress[value]::-webkit-progress-value {
         background-color: $youtube;
     }
+}
+/* uncss:ignore */
+.youtube.selected td {
+    background-color: $youtube;
 }
 
 .rs,

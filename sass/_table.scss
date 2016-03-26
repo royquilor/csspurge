@@ -30,15 +30,15 @@ tr {
 td {
     padding-right: 1.2rem;
 }
-
+/* uncss:ignore */
 .selected td {
     color: $white;
 }
-
+/* uncss:ignore */
 .selected svg {
     fill: $white;
 }
-
+/* uncss:ignore */
 .bbc.selected td,
 .apple.selected td,
 .guardian.selected td,
@@ -61,17 +61,13 @@ th span {
     background-size: 10px auto;
 }
 
+/* uncss:ignore */
 .desc span {
     background: url("../i/chevron-up.svg") no-repeat 0 -1px;
     background-size: 10px auto;
 }
 
-.ls {
-    text-align: left;
-}
-
 th {
-    xbackground: $light-gray;
     border-bottom: 1px solid $silver;
     border-right: 1px solid $silver;
 }
