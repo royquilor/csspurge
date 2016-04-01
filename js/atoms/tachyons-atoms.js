@@ -1,8 +1,8 @@
 var num4 = 40;
 
 var canvas4 = document.getElementById("tachyons-atoms");
-var width4 = canvas4.width = 400;
-var height4 = canvas4.height = 100;
+var width4 = canvas4.width = 80;
+var height4 = canvas4.height = 80;
 var ctx4 = canvas4.getContext("2d");
 
 var particles4 = d3.range(num4).map(function(i) {
@@ -14,7 +14,7 @@ d3.timer(step4);
 function step4() {
   ctx4.fillStyle = "rgba(255,255,255,0.3)";
   ctx4.fillRect(0,0,width4,height4);
-  ctx4.fillStyle = "rgba(0,153,247,.5)";
+  ctx4.fillStyle = "rgba(0,153,247,1.0)";
 
   particles4.forEach(function(p) {
       p[0] += Math.round(2*Math.random()-1);

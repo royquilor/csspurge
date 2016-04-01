@@ -61,7 +61,7 @@ $bg-green: #2ECC40;
 .bg-gray { background-color: #AAAAAA; }
 .bg-silver { background-color: #DDDDDD; }
 .bg-black { background-color: #111111; }
-
+.bg-light-gray { background-color: #eeeeee; }
 .bg-black-1 {
     background-color: #150a14;
 }
@@ -263,22 +263,25 @@ $sk-black : stroke: #111111;
 
 // http://brand-colors.com
 
-$airbnb:        #fd5c63;
-$dribbble:      #ea4c89;
-$etsy:          #d5641c;
-$facebook:      #3b5998;
-$github:        #4183c4;
-$google:        #4285f4;
-$kickstarter:   #2bde73;
-$medium:        #2fb88b;
-$paypal:        #003087;
-$pinterest:     #bd081c;
-$slack:         #6ecadc;
-$stackoverflow: #fe7a15;
-$stripe:        #00afe1;
-$twitter:       #55acee;
-$yahoo:         #410093;
-$youtube:       #cd201f;
+$airbnb:            #fd5c63;
+$dribbble:          #ea4c89;
+$dropbox:           #007ee5;
+$etsy:              #d5641c;
+$facebook:          #3b5998;
+$github:            #4183c4;
+$google:            #4285f4;
+$imdb:              #f5de50;
+$kickstarter:       #2bde73;
+$medium:            #2fb88b;
+$paypal:            #003087;
+$pinterest:         #bd081c;
+$slack:             #6ecadc;
+$smashingmagazine: #e95c33;
+$stackoverflow:     #fe7a15;
+$stripe:            #00afe1;
+$twitter:           #55acee;
+$yahoo:             #410093;
+$youtube:           #cd201f;
 
 .airbnb {
     color: $airbnb;
@@ -312,6 +315,23 @@ $youtube:       #cd201f;
 /* uncss:ignore */
 .dribbble.selected td {
     background-color: $dribbble;
+}
+
+.dropbox {
+    color: $dropbox;
+    a {
+        color: inherit;
+    }
+    svg {
+        fill: $dropbox;
+    }
+    progress[value]::-webkit-progress-value {
+        background-color: $dropbox;
+    }
+}
+/* uncss:ignore */
+.dropbox.selected td {
+    background-color: $dropbox;
 }
 
 .etsy {
@@ -380,6 +400,23 @@ $youtube:       #cd201f;
 /* uncss:ignore */
 .google.selected td {
     background-color: $google;
+}
+
+.imdb {
+    color: $imdb;
+    a {
+        color: inherit;
+    }
+    svg {
+        fill: $imdb;
+    }
+    progress[value]::-webkit-progress-value {
+        background-color: $imdb;
+    }
+}
+/* uncss:ignore */
+.imdb.selected td {
+    background-color: $imdb;
 }
 
 .kickstarter {
@@ -465,6 +502,23 @@ $youtube:       #cd201f;
 /* uncss:ignore */
 .slack.selected td {
     background-color: $slack;
+}
+
+.smashingmagazine {
+    color: $smashingmagazine;
+    a {
+    color: inherit;
+    }
+    svg {
+        fill: $smashingmagazine;
+    }
+    progress[value]::-webkit-progress-value {
+        background-color: $smashingmagazine;
+    }
+}
+/* uncss:ignore */
+.smashingmagazine.selected td {
+    background-color: $smashingmagazine;
 }
 
 .stackoverflow {

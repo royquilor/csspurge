@@ -21,13 +21,68 @@ video {
         }
 }
 
+// http://geoffgraham.me/css-bar-chart-using-html5-progress/
+
+@-webkit-keyframes bar-fill {
+ 0% { width: 0; }
+}
+
+@keyframes bar-fill {
+ 0% { width: 0; }
+}
+
+.chart {
+    margin: 0;
+    padding: 0;
+}
+
+.bar {
+    height: 30px;
+    margin-bottom: 3px;
+    width: 100%;
+    position: relative;
+    list-style-type: none;
+    span {
+        z-index: 100;
+        text-align: left;
+        position: relative;
+        display: inline-block;
+        font-family: $din;
+        -webkit-font-smoothing: antialiased;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        height: 30px;
+    }
+    .fr {
+        float: right;
+        padding-left: .5em;
+    }
+    ::-webkit-progress-value {
+        -webkit-animation: bar-fill 2s;
+        width: 0px;
+    }
+}
+
+
+
+progress,
+progress[role] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background-size: auto;
+}
+
 progress {
-    height: 6px;
+    height: 30px;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
-    xmargin-left: 0.5rem;
-    width: 90%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 progress[value]::-webkit-progress-value {
@@ -52,7 +107,7 @@ hr {
     height: 1px;
 }
 
-.particles {
+header .particles {
   position: absolute;
   left: 0;
   top: 0;

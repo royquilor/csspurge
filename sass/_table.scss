@@ -1,7 +1,3 @@
-#league {
-    overflow:auto;
-}
-
 table {
     border-top: 1px solid $silver;
     text-align: left;
@@ -39,10 +35,17 @@ td {
     fill: $white;
 }
 /* uncss:ignore */
+.basscss.selected td,
+.purecss.selected td,
+.tachyons.selected td,
+.unsplash.selected td,
 .bbc.selected td,
+.bootstrap.selected td,
+.csstricks.selected td,
 .apple.selected td,
 .guardian.selected td,
-.wikipedia.selected td {
+.wikipedia.selected td,
+.ufc.selected td {
     background-color: $black;
 }
 

@@ -52,7 +52,8 @@ gulp.task('styles', function() {
 
 //Compress and combine JS files
 gulp.task('js', function() {
- return gulp.src(['js/*.js','js/atoms/*.js'])
+ // return gulp.src(['js/*.js','js/atoms/*.js'])
+ return gulp.src('js/*.js')
   .pipe(concat('main.js'))
   .pipe(uglify())
   .pipe(rename('main.min.js'))
@@ -78,9 +79,9 @@ gulp.task('workflow', function () {
       browsers: ['last 2 versions'],
       cascade: false
     }))
-    .pipe(uncss({
-      html: ['index.html']
-    }))
+    // .pipe(uncss({
+    //   html: ['index.html']
+    // }))
     .pipe(cssnano())
     .pipe(sourcemaps.write('./'))
 

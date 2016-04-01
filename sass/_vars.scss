@@ -8,6 +8,11 @@
 $display: 'SF UI Display', 'helvetica neue', roboto, noto, helvetica, ubuntu, arial, sans-serif;
 $sans:  'SF UI Text', 'helvetica neue', roboto, noto, helvetica, ubuntu, arial, sans-serif;
 $serif:	  Georgia, Times New Roman, Times, serif;
-$numbers:  orbitron,'DINCondensed-Bold';    
+$din:   'DINCondensed-Bold', HelveticaNeue-CondensedBold;
+$numbers:  orbitron,'DINCondensed-Bold', HelveticaNeue-CondensedBold;
 $white:   #FFFFFF;
 $black:   #333333;
+
+.f7 {
+    font-size: 0.7rem;
+}

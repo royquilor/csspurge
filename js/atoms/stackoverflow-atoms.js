@@ -1,8 +1,8 @@
 var num3 = 600;
 
 var canvas3 = document.getElementById("stackoverflow-atoms");
-var width3 = canvas3.width = 400;
-var height3 = canvas3.height = 100;
+var width3 = canvas3.width = 80;
+var height3 = canvas3.height = 80;
 var ctx3 = canvas3.getContext("2d");
 
 var particles3 = d3.range(num3).map(function(i) {
@@ -14,7 +14,7 @@ d3.timer(step3);
 function step3() {
   ctx3.fillStyle = "rgba(255,255,255,0.3)";
   ctx3.fillRect(0,0,width3,height3);
-  ctx3.fillStyle = "rgba(254,122,21,0.5)";
+  ctx3.fillStyle = "rgba(254,122,21,1.0)";
 
   particles3.forEach(function(p) {
       p[0] += Math.round(2*Math.random()-1);

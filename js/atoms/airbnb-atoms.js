@@ -1,7 +1,7 @@
 var num6 = 356;
 var canvas6 = document.getElementById("airbnb-atoms");
-var width6 = canvas6.width = 400;
-var height6 = canvas6.height = 100;
+var width6 = canvas6.width = 80;
+var height6 = canvas6.height = 80;
 var ctx6 = canvas6.getContext("2d");
 
 var particles6 = d3.range(num6).map(function(i) {
@@ -13,7 +13,7 @@ d3.timer(step6);
 function step6() {
   ctx6.fillStyle = "rgba(255,255,255,0.3)";
   ctx6.fillRect(0,0,width6,height6);
-  ctx6.fillStyle = "rgba(253,92,99,0.5)";
+  ctx6.fillStyle = "rgba(253,92,99,1.0)";
 
   particles6.forEach(function(p) {
       p[0] += Math.round(2*Math.random()-1);
