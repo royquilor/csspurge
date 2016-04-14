@@ -49,7 +49,7 @@ td {
     background-color: $black;
 }
 
-th span {
+.league th span {
     position: absolute;
     right: -10px;
     display: block;
@@ -75,11 +75,11 @@ th {
     border-right: 1px solid $silver;
 }
 
-tr:nth-child(even) td {
+.odd tr:nth-child(even) td {
     background: $light-gray;
 }
 
-th button {
+.league th button {
     background: $white;
     border: 0;
     padding: 0 .2rem 0 0;
@@ -98,4 +98,34 @@ thead {
     position: sticky;
     top: 0;
     background: white;
+}
+
+
+.table-casestudy {
+    border: 0;
+    th {
+        border: 0;
+        vertical-align: text-bottom;
+        padding: 0;
+        font-size: 1.25rem;
+    }
+    td {
+        font-size: 3rem;
+        padding: .4em 0 0 0;
+        border-bottom:1px solid $silver;
+        vertical-align: text-bottom;
+        width: 40%;
+    }
+    thead th {
+        padding: 1em 0;
+    }
+    tbody th,
+    tfoot th {
+        border-bottom:1px solid $gray;
+    }
+
+    tfoot td {
+        font-size: 5rem;
+    }
+
 }

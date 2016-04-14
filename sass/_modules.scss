@@ -36,31 +36,9 @@ video {
     padding: 0;
 }
 
-.bar {
-    height: 30px;
-    margin-bottom: 3px;
-    width: 100%;
-    position: relative;
-    list-style-type: none;
-    span {
-        z-index: 100;
-        text-align: left;
-        position: relative;
-        display: inline-block;
-        font-family: $din;
-        -webkit-font-smoothing: antialiased;
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        height: 30px;
-    }
-    .fr {
-        float: right;
-        padding-left: .5em;
-    }
-    ::-webkit-progress-value {
-        -webkit-animation: bar-fill 2s;
-        width: 0px;
-    }
+.bar ::-webkit-progress-value {
+    -webkit-animation: bar-fill 2s;
+    width: 0px;
 }
 
 
@@ -75,18 +53,14 @@ progress[role] {
 }
 
 progress {
-    height: 30px;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 progress[value]::-webkit-progress-value {
     background-color:$red;
+    background-color:rgba(255,65,54,.8);
 }
 
 progress[value]::-webkit-progress-bar {
@@ -95,6 +69,10 @@ progress[value]::-webkit-progress-bar {
 
 progress.blue[value]::-webkit-progress-value {
     background-color: $blue;
+}
+
+progress.white[value]::-webkit-progress-value {
+    background-color: $white;
 }
 
 .black progress[value]::-webkit-progress-value {
@@ -107,11 +85,11 @@ hr {
     height: 1px;
 }
 
-header .particles {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
+// header .particles {
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+// }
 
 .help {
   height: 100px;
