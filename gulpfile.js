@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+    babel = require('gulp-babel'),
     uncss = require('gulp-uncss'),
     cssnano = require('gulp-cssnano'),
     csslint = require('gulp-csslint'),
@@ -12,6 +13,9 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     browserSync = require('browser-sync'),
     browserReload = browserSync.reload;
+
+var src = 'src';
+var dist = 'dist';
 
 /*
 Clean up the build directory
@@ -60,6 +64,21 @@ gulp.task('js', function() {
   .pipe(gulp.dest('js/min/'))
 });
 
+gulp.task('jsx', function() {
+  return gulp.src(src='jsx/*.jsx')
+  .pipe(babel())
+  .pipe(gulp.dest(dist))
+});
+
+gulp.task('concat', function() {
+  return gulp.src('dist/*.js')
+  .pipe(sourcemaps.init())
+  .pipe(babel())
+  .pipe(concat('screen.min.js'))
+  .pipe(sourcemaps.write('.'))
+  .pipe(gulp.dest(dist));
+});
+
 gulp.task('csslint', function() {
  gulp.src('./css/rdy.css')
   .pipe(csslint({
@@ -101,11 +120,12 @@ gulp.task('bs-reload', function () {
   browserSync.reload();
 });
 
-gulp.task('default', ['workflow', 'js', 'browser-sync', 'bs-reload'], function () {
+gulp.task('default', ['workflow', 'js', 'jsx', 'concat', 'browser-sync', 'bs-reload'], function () {
   gulp.start('workflow', 'csslint', 'js');
   gulp.watch('sass/*.scss', ['workflow']);
   gulp.watch('css/rdy.css', ['bs-reload']);
   gulp.watch('js/min/main.min.js', ['bs-reload']);
+  gulp.watch('js/screen.js', ['jsx']);
   gulp.watch('*.html', ['bs-reload']);
 });
 

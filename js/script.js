@@ -4,20 +4,6 @@ function each(elements, callback) {
   }
 }
 
-// ADD class tr to all tr tags
-// var tr = document.querySelectorAll("tr")
-//
-// each(tr, function(element) {
-//   element.className += " tr"
-// })
-
-//ADD class tr to all tr tags
-// document.querySelector("tr.wikipedia").className += " black"
-
-// each(tr, function(element) {
-//   element.className += " blue"
-// })
-
 // Get the tr, and when the user clicks on it, execute myFunction
 // var tr = document.getElementsByClassName("tr");
 var tr = document.getElementsByTagName("tr");
@@ -33,7 +19,7 @@ var selectedFunction = function() {
 for (var i = 0; i < tr.length; i++) {
     tr[i].addEventListener('click', selectedFunction, false);
 };
-
+/*
 var position = document.querySelectorAll("tr td:first-child")
 var sites = document.querySelectorAll("tr td:nth-child(2)")
 var float = document.querySelectorAll("tr td:nth-child(3)")
@@ -94,115 +80,12 @@ for(var count=0; count < fileSize.length; count++) {
 for(var count=0; count < totalScore.length; count++) {
     totalScore.item(count).setAttribute("class", "lts");
 };
-
+*/
 
 var options = {
   valueNames: ['lp', 'ls', 'lf', 'lc', 'lfs', 'lff', 'lsp', 'lmq', 'lst', 'lsl', 'lfskb', 'lts']
 };
 
-var leagueList = new List('league', options);
+var leagueList = new List('component-league', options);
 
-// document.querySelector("td:first-child").setAttribute("class", "company")
 
-// Returns a function, that, as long as it continues to be invoked, will not
-// be triggered. The function will be called after it stops being called for
-// N milliseconds. If `immediate` is passed, trigger the function on the
-// leading edge, instead of the trailing.
-function debounce(func, wait, immediate) {
-	var timeout;
-	return function() {
-		var context = this, args = arguments;
-		var later = function() {
-			timeout = null;
-			if (!immediate) func.apply(context, args);
-		};
-		var callNow = immediate && !timeout;
-		clearTimeout(timeout);
-		timeout = setTimeout(later, wait);
-		if (callNow) func.apply(context, args);
-	};
-};
-
-// Animation
-
-var myEfficientFn = debounce(function() {
-
-$(window).scroll(function() {
-
-  var topOfWindow = $(window).scrollTop();
-
-  var imagePos = $('.cssfilesize').offset().top;
-
-  $('.chart .bar').each(function(){
-
-    if (imagePos < topOfWindow+400) {
-      $(this).addClass("nice");
-    }
-  });
-});
-
-}, 100);
-
-window.addEventListener('scroll', myEfficientFn);
-
-// var myEfficientFn = debounce(function() {
-//
-// $(window).scroll(function() {
-//
-//   var topOfWindow = $(window).scrollTop();
-//
-//   var imagePos = $('.animated').offset().top;
-//
-//   $('.gridscores .browser').each(function(){
-//
-//     if (imagePos < topOfWindow+500) {
-//       $(this).addClass("fadeInLeft");
-//     }
-//   });
-//   $('.gridscores .iwatch').each(function(){
-//     var imagePos = $(this).offset().top;
-//     if (imagePos < topOfWindow+500) {
-//       $(this).addClass("fadeInLeft");
-//     }
-//   });
-//   $('.awwesome .browser').each(function(){
-//     var imagePos = $(this).offset().top;
-//     if (imagePos < topOfWindow+500) {
-//       $(this).addClass("fadeInUp");
-//     }
-//   });
-//   $('.branding picture').each(function(){
-//     var imagePos = $(this).offset().top;
-//     if (imagePos < topOfWindow+900) {
-//       $(this).addClass("fadeIn");
-//     }
-//   });
-//   $('.mobile .iphone').each(function(){
-//     var imagePos = $(this).offset().top;
-//     if (imagePos < topOfWindow+900) {
-//       $(this).addClass("fadeInLeft");
-//     }
-//   });
-//   $('.intranet .browser').each(function(){
-//     var imagePos = $(this).offset().top;
-//     if (imagePos < topOfWindow+500) {
-//       $(this).addClass("fadeInRight");
-//     }
-//   });
-//   $('.intranet figure').each(function(){
-//     var imagePos = $(this).offset().top;
-//     if (imagePos < topOfWindow+500) {
-//       $(this).addClass("fadeIn");
-//     }
-//   });
-//   $('.lily .browser').each(function(){
-//     var imagePos = $(this).offset().top;
-//     if (imagePos < topOfWindow+500) {
-//       $(this).addClass("fadeInLeft");
-//     }
-//   });
-// });
-//
-// }, 100);
-//
-// window.addEventListener('scroll', myEfficientFn);

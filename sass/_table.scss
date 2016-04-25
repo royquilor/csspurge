@@ -27,7 +27,8 @@ td {
     padding-right: 1.2rem;
 }
 /* uncss:ignore */
-.selected td {
+.selected td,
+.selected a {
     color: $white;
 }
 /* uncss:ignore */
@@ -85,7 +86,6 @@ th {
     padding: 0 .2rem 0 0;
     margin: 0;
     font-weight: 500;
-    text-align: right;
     width: 100%;
     position: relative;
 }

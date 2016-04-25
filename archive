@@ -1,0 +1,80 @@
+"use strict";
+
+var Progress = React.createClass({
+  displayName: "Progress",
+
+  getInitialState: function getInitialState() {
+    return { qty: 0 };
+  },
+
+  render: function render() {
+    return React.createElement(
+      "div",
+      null,
+      React.createElement(
+        "div",
+        null,
+        React.createElement(
+          "span",
+          null,
+          this.props.name
+        ),
+        React.createElement(
+          "span",
+          null,
+          this.props.filesize
+        )
+      ),
+      React.createElement("progress", { value: this.props.value, max: this.props.maxvalue })
+    );
+  }
+});
+
+var ProgressList = React.createClass({
+  displayName: "ProgressList",
+
+  render: function render() {
+    return React.createElement(
+      "div",
+      null,
+      React.createElement(Progress, { name: "BassCSS", filesize: "14", value: "14", maxvalue: "1180" }),
+      React.createElement(Progress, { name: "Pure CSS", filesize: "18", value: "18", maxvalue: "1180" }),
+      React.createElement(Progress, { name: "Wikipedia", filesize: "32", value: "32", maxvalue: "1180" }),
+      React.createElement(Progress, { name: "Tachyons", filesize: "40", value: "40", maxvalue: "1180" }),
+      React.createElement(Progress, { name: "Smashing Magazine", filesize: "56", value: "56", maxvalue: "1180" }),
+      React.createElement(Progress, { name: "Google", filesize: "32", value: "32", maxvalue: "1180" })
+    );
+  }
+});
+
+var ProgressList = React.createClass({
+  displayName: "ProgressList",
+
+  getInitialState: function getInitialState() {
+    return {
+      total: 0,
+      productList: [{ name: "BassCss", filesize: 14, value: 14, maxvalue: 1180 }, { name: "Pure CSS", filesize: 18, value: 18, maxvalue: 1180 }, { name: "Wikipedia", filesize: 32, value: 32, maxvalue: 1180 }]
+    };
+  },
+
+  calculateTotal: function calculateTotal(price) {
+    this.setState({ total: this.state.total + filesize + value + maxvalue });
+  },
+
+  render: function render() {
+    var component = this;
+    var products = this.state.productList.map(function (product) {
+      return React.createElement(Progress, { name: product.name, filesize: product.filesize, value: product.value, maxvalue: product.maxvalue,
+        handleTotal: component.calculateTotal });
+    });
+
+    return React.createElement(
+      "div",
+      null,
+      products,
+      React.createElement(Total, { total: this.state.total })
+    );
+  }
+});
+
+ReactDOM.render(React.createElement(ProgressList, null), document.getElementById("progress"));
