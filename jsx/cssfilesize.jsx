@@ -2,7 +2,7 @@ var Progress = React.createClass({
   
   render: function() {
     return (
-       <div className="bar relative bb border--white h-25 overflow-hidden">
+       <div className="bar relative bb border--white h-25 lh-copy-2 overflow-hidden">
             <div className="relative z-100">
                 <span>{this.props.name}</span>
                 <span className="fr">{this.props.value}</span>

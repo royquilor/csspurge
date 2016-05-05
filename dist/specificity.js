@@ -7,7 +7,7 @@ var Progress = React.createClass({
   render: function render() {
     return React.createElement(
       "div",
-      { className: "bar relative bb border--white h-25 overflow-hidden" },
+      { className: "bar relative bb border--white h-25 lh-copy-2 overflow-hidden" },
       React.createElement(
         "div",
         { className: "relative z-100" },
