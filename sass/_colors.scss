@@ -264,17 +264,24 @@ $sk-black : stroke: #111111;
 // http://brand-colors.com
 
 $airbnb:            #fd5c63;
+$citypantry:	    #2c4c70;
 $dribbble:          #ea4c89;
 $dropbox:           #007ee5;
 $etsy:              #d5641c;
+$foodit:            #c83c3c;
 $facebook:          #3b5998;
+$futurice:	    #349d4a;
 $github:            #4183c4;
 $google:            #4285f4;
 $imdb:              #f5de50;
+$imin:	 	    #ef9819;	
 $kickstarter:       #2bde73;
+$marvelapp:	    #1fb6ff;
 $medium:            #2fb88b;
 $paypal:            #003087;
 $pinterest:         #bd081c;
+$rightmove:	    #004889;
+$siliconmr:	    #179e76;
 $slack:             #6ecadc;
 $smashingmagazine: #e95c33;
 $stackoverflow:     #fe7a15;
@@ -282,6 +289,7 @@ $stripe:            #00afe1;
 $twitter:           #55acee;
 $yahoo:             #410093;
 $youtube:           #cd201f;
+$zoopla:  	    #5c1862;
 
 .airbnb {
     color: $airbnb;
@@ -298,6 +306,23 @@ $youtube:           #cd201f;
 /* uncss:ignore */
 .airbnb.selected td {
     background-color: $airbnb;
+}
+
+.citypantry {
+    color: $citypantry;
+    a {
+        color: inherit;
+    }
+    svg {
+        fill: $citypantry;
+    }
+    progress[value]::-webkit-progress-value {
+        background-color: $citypantry;
+    }
+}
+/* uncss:ignore */
+.citypantry.selected td {
+    background-color: $citypantry;
 }
 
 .dribbble {
@@ -368,6 +393,40 @@ $youtube:           #cd201f;
     background-color: $facebook;
 }
 
+.foodit {
+    color: $foodit;
+    a {
+        color: inherit;
+    }
+    svg {
+        fill: $foodit;
+    }
+    progress[value]::-webkit-progress-value {
+        background-color: $foodit;
+    }
+}
+/* uncss:ignore */
+.foodit.selected td {
+    background-color: $foodit;
+}
+
+.futurice {
+    color: $futurice;
+    a {
+        color: inherit;
+    }
+    svg {
+        fill: $futurice;
+    }
+    progress[value]::-webkit-progress-value {
+        background-color: $futurice;
+    }
+}
+/* uncss:ignore */
+.futurice.selected td {
+    background-color: $futurice;
+}
+
 .github {
     color: $github;
     a {
@@ -419,6 +478,23 @@ $youtube:           #cd201f;
     background-color: $imdb;
 }
 
+.imin {
+    color: $imin;
+    a {
+        color: inherit;
+    }
+    svg {
+        fill: $imin;
+    }
+    progress[value]::-webkit-progress-value {
+        background-color: $imin;
+    }
+}
+/* uncss:ignore */
+.imin.selected td {
+    background-color: $imin;
+}
+
 .kickstarter {
     color: $kickstarter;
     a {
@@ -434,6 +510,23 @@ $youtube:           #cd201f;
 /* uncss:ignore */
 .kickstarter.selected td {
     background-color: $kickstarter;
+}
+
+.marvelapp {
+    color: $marvelapp;
+    a {
+        color: inherit;
+    }
+    svg {
+        fill: $marvelapp;
+    }
+    progress[value]::-webkit-progress-value {
+        background-color: $marvelapp;
+    }
+}
+/* uncss:ignore */
+.marvelapp.selected td {
+    background-color: $marvelapp;
 }
 
 .medium {
@@ -485,6 +578,40 @@ $youtube:           #cd201f;
 /* uncss:ignore */
 .pinterest.selected td {
     background-color: $pinterest;
+}
+
+.rightmove {
+    color: $rightmove;
+    a {
+        color: inherit;
+    }
+    svg {
+        fill: $rightmove;
+    }
+    progress[value]::-webkit-progress-value {
+        background-color: $rightmove;
+    }
+}
+/* uncss:ignore */
+.rightmove.selected td {
+    background-color: $rightmove;
+}
+
+.siliconmr {
+    color: $siliconmr;
+    a {
+        color: inherit;;
+    }
+    svg {
+        fill: $siliconmr;
+    }
+    progress[value]::-webkit-progress-value {
+        background-color: $siliconmr;
+    }
+}
+/* uncss:ignore */
+.siliconmr.selected td {
+    background-color: $siliconmr;
 }
 
 .slack {
@@ -604,6 +731,23 @@ $youtube:           #cd201f;
 /* uncss:ignore */
 .youtube.selected td {
     background-color: $youtube;
+}
+
+.zoopla {
+    color: $zoopla;
+    a {
+    color: inherit;
+    }
+    svg {
+        fill: $zoopla;
+    }
+    progress[value]::-webkit-progress-value {
+        background-color: $zoopla;
+    }
+}
+/* uncss:ignore */
+.zoopla.selected td {
+    background-color: $zoopla;
 }
 
 .rs,
