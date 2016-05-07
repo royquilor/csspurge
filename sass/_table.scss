@@ -84,6 +84,10 @@ tr:nth-child(even) td {
     background: $light-gray;
 }
 
+.table-casestudy tr:nth-child(even) td {
+    background: $white;
+}
+
 .league th button {
     background: $white;
     border: 0;
