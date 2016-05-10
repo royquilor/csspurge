@@ -264,7 +264,6 @@ $sk-black : stroke: #111111;
 // http://brand-colors.com
 
 $airbnb:            #fd5c63;
-$citypantry:	    #2c4c70;
 $dribbble:          #ea4c89;
 $dropbox:           #007ee5;
 $etsy:              #d5641c;
@@ -274,7 +273,6 @@ $futurice:	    #349d4a;
 $github:            #4183c4;
 $google:            #4285f4;
 $imdb:              #f5de50;
-$imin:	 	    #ef9819;	
 $kickstarter:       #2bde73;
 $marvelapp:	    #1fb6ff;
 $medium:            #2fb88b;
@@ -291,461 +289,152 @@ $yahoo:             #410093;
 $youtube:           #cd201f;
 $zoopla:  	    #5c1862;
 
-.airbnb {
-    color: $airbnb;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $airbnb;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $airbnb;
-    }
-}
 /* uncss:ignore */
+.airbnb:hover td,
 .airbnb.selected td {
     background-color: $airbnb;
 }
 
-.citypantry {
-    color: $citypantry;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $citypantry;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $citypantry;
-    }
-}
 /* uncss:ignore */
-.citypantry.selected td {
-    background-color: $citypantry;
-}
-
-.dribbble {
-    color: $dribbble;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $dribbble;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $dribbble;
-    }
-}
-/* uncss:ignore */
+.dribbble:hover td,
 .dribbble.selected td {
     background-color: $dribbble;
 }
 
-.dropbox {
-    color: $dropbox;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $dropbox;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $dropbox;
-    }
-}
 /* uncss:ignore */
+.dropbox:hover td,
 .dropbox.selected td {
     background-color: $dropbox;
 }
 
-.etsy {
-    color: $etsy;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $etsy;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $etsy;
-    }
-}
 /* uncss:ignore */
+.etsy:hover td,
 .etsy.selected td {
     background-color: $etsy;
 }
 
-.facebook {
-    color: $facebook;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $facebook;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $facebook;
-    }
-}
 /* uncss:ignore */
+.facebook:hover td,
 .facebook.selected td {
     background-color: $facebook;
 }
 
-.foodit {
-    color: $foodit;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $foodit;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $foodit;
-    }
-}
 /* uncss:ignore */
+.foodit:hover td,
 .foodit.selected td {
     background-color: $foodit;
 }
 
-.futurice {
-    color: $futurice;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $futurice;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $futurice;
-    }
-}
 /* uncss:ignore */
+.futurice:hover td,
 .futurice.selected td {
     background-color: $futurice;
 }
 
-.github {
-    color: $github;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $github;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $github;
-    }
-}
 /* uncss:ignore */
+.github:hover td,
 .github.selected td {
     background-color: $github;
 }
 
-.google {
-    color: $google;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $google;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $google;
-    }
-}
 /* uncss:ignore */
+.google:hover td,
 .google.selected td {
     background-color: $google;
 }
 
-.imdb {
-    color: $imdb;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $imdb;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $imdb;
-    }
-}
 /* uncss:ignore */
+.imdb:hover td,
 .imdb.selected td {
     background-color: $imdb;
 }
 
-.imin {
-    color: $imin;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $imin;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $imin;
-    }
-}
 /* uncss:ignore */
-.imin.selected td {
-    background-color: $imin;
-}
-
-.kickstarter {
-    color: $kickstarter;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $kickstarter;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $kickstarter;
-    }
-}
-/* uncss:ignore */
+.kickstarter:hover td,
 .kickstarter.selected td {
     background-color: $kickstarter;
 }
 
-.marvelapp {
-    color: $marvelapp;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $marvelapp;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $marvelapp;
-    }
-}
 /* uncss:ignore */
+.marvelapp:hover td,
 .marvelapp.selected td {
     background-color: $marvelapp;
 }
 
-.medium {
-    color: $medium;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $medium;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $medium;
-    }
-}
 /* uncss:ignore */
+.medium:hover td,
 .medium.selected td {
     background-color: $medium;
 }
 
-.paypal {
-    color: $paypal;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $paypal;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $paypal;
-    }
-}
 /* uncss:ignore */
+.paypal:hover td,
 .paypal.selected td {
     background-color: $paypal;
 }
 
-.pinterest {
-    color: $pinterest;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $pinterest;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $pinterest;
-    }
-}
 /* uncss:ignore */
+.pinterest:hover td,
 .pinterest.selected td {
     background-color: $pinterest;
 }
 
-.rightmove {
-    color: $rightmove;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $rightmove;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $rightmove;
-    }
-}
 /* uncss:ignore */
+.rightmove:hover td,
 .rightmove.selected td {
     background-color: $rightmove;
 }
 
-.siliconmr {
-    color: $siliconmr;
-    a {
-        color: inherit;;
-    }
-    svg {
-        fill: $siliconmr;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $siliconmr;
-    }
-}
 /* uncss:ignore */
+.siliconmr:hover td, 
 .siliconmr.selected td {
     background-color: $siliconmr;
 }
 
-.slack {
-    color: $slack;
-    a {
-        color: inherit;;
-    }
-    svg {
-        fill: $slack;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $slack;
-    }
-}
 /* uncss:ignore */
+.slack:hover td, 
 .slack.selected td {
     background-color: $slack;
 }
 
-.smashingmagazine {
-    color: $smashingmagazine;
-    a {
-    color: inherit;
-    }
-    svg {
-        fill: $smashingmagazine;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $smashingmagazine;
-    }
-}
 /* uncss:ignore */
+.smashingmagazine:hover td, 
 .smashingmagazine.selected td {
     background-color: $smashingmagazine;
 }
 
-.stackoverflow {
-    color: $stackoverflow;
-    a {
-    color: inherit;
-    }
-    svg {
-        fill: $stackoverflow;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $stackoverflow;
-    }
-}
 /* uncss:ignore */
+.stackoverflow:hover td,
 .stackoverflow.selected td {
     background-color: $stackoverflow;
 }
 
-.stripe {
-    color: $stripe;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $stripe;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $stripe;
-    }
-}
 /* uncss:ignore */
+.stripe:hover td,
 .stripe.selected td {
     background-color: $stripe;
 }
 
-.twitter {
-    color: $twitter;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $twitter;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $twitter;
-    }
-}
 /* uncss:ignore */
+.twitter:hover td,
 .twitter.selected td {
     background-color: $twitter;
 }
 
-.yahoo {
-    color: $yahoo;
-    a {
-        color: inherit;
-    }
-    svg {
-        fill: $yahoo;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $yahoo;
-    }
-}
 /* uncss:ignore */
+.yahoo:hover td,
 .yahoo.selected td {
     background-color: $yahoo;
 }
 
-.youtube {
-    color: $youtube;
-    a {
-    color: inherit;
-    }
-    svg {
-        fill: $youtube;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $youtube;
-    }
-}
 /* uncss:ignore */
+.youtube:hover td,
 .youtube.selected td {
     background-color: $youtube;
 }
 
-.zoopla {
-    color: $zoopla;
-    a {
-    color: inherit;
-    }
-    svg {
-        fill: $zoopla;
-    }
-    progress[value]::-webkit-progress-value {
-        background-color: $zoopla;
-    }
-}
 /* uncss:ignore */
+.zoopla:hover td, 
 .zoopla.selected td {
     background-color: $zoopla;
 }

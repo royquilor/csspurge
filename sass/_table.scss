@@ -27,30 +27,19 @@ td {
     padding-right: 1.2rem;
 }
 /* uncss:ignore */
+tr:hover td,
 .selected td,
 .selected a {
     color: $white;
 }
 /* uncss:ignore */
+tr:hover svg,
 .selected svg {
     fill: $white;
 }
 /* uncss:ignore */
-.basscss.selected td,
-.purecss.selected td,
-.tachyons.selected td,
-.unsplash.selected td,
-.bbc.selected td,
-.bootstrap.selected td,
-.csstricks.selected td,
-.apple.selected td,
-.theguardian.selected td,
-.wikipedia.selected td,
-.ufc.selected td,
-.skyscanner.selected td,
-.streetlife.selected td,
-.signaluk.selected td,
-.duedil.selected td {
+.black:hover td,
+.black.selected td {
    background-color: $black;
 }
 
