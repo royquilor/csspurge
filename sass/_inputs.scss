@@ -1,7 +1,7 @@
 /*
  *
- * btns.css
- * Simple css utilities for building responsive buttons
+ * inputs.css
+ * Simple css utilities for building responsive form inputs
  * Author: mrmrs
  * License: MIT
  *
@@ -9,39 +9,35 @@
 
 /*
 
-  Base .btn class
+  Base .input-text class
 
   Code:
-  <a href="#" class="btn">Default button</a>
+  <input type="text" class="input-text" value="Type something" />
 
 */
 
-.btn,
-.btn:link,
-.btn:visited {
+.input-text {
   background: #fff;
   border-radius: .25em;
   border-style: solid;
   border-width: 1px;
   color: #111;
   display: inline-block;
-  letter-spacing: .15em;
   margin-bottom: .5em;
   padding: 1em 1.5em;
   text-decoration: none;
-  text-transform: uppercase;
   transition: color .4s, background-color .4s, border .4s;
 }
 
-.btn:hover,
-.btn:focus {
+.input-text:hover,
+.input-text:focus {
   background: #fff;
   color: #7FDBFF;
   border: 1px solid #7FDBFF;
   transition: background-color .3s, color .3s, border .3s;
 }
 
-.btn:active {
+.input:active {
   color: #0074D9;
   border: 1px solid #0074D9;
   transition: background-color .3s, color .3s, border .3s;
@@ -52,20 +48,20 @@
 
   Sizes
 
-  Small  = .btn--s
-  Medium = .btn--m
-  Large  = .btn--l
+  Small  = .input-text--s
+  Medium = .input-text--m
+  Large  = .input-text--l
 
   Code:
-  <a href="#" class="btn btn--s">
-  <a href="#" class="btn btn--m">
-  <a href="#" class="btn btn--l">
+<input type="text" class="input-text input-text--s" value="Type something" />
+<input type="text" class="input-text input-text--m" value="Type something" />
+<input type="text" class="input-text input-text--l" value="Type something" />
 
 */
 
-.btn--s { font-size: 14px; }
-.btn--m { font-size: 16px; }
-.btn--l { font-size: 20px; border-radius: .25em!important; }
+.input-text--s { font-size: 14px; }
+.input-text--m { font-size: 16px; }
+.input-text--l { font-size: 20px; border-radius: .25em!important; }
 
 
 /*
@@ -73,12 +69,11 @@
   Layout utility for responsive buttons
 
   Code:
-  <a href="#" class="btn btn--full">
+  <a href="#" class=.input-text btn--full">
 
 */
 
-.btn--full,
-.btn--full:link {
+.input-text--full {
   border-radius: .25em;
   display: block;
   margin-left: auto;
@@ -97,53 +92,49 @@
   * Colors
 
   Code:
-  <a href="#" class="btn btn--black">
-  <a href="#" class="btn btn--white">
-  <a href="#" class="btn btn--gray">
-  <a href="#" class="btn btn--gray-dark">
-  <a href="#" class="btn btn--gray-border">
-  <a href="#" class="btn btn--blue">
+  <a href="#" class=.input-text btn--black">
+  <a href="#" class=.input-text btn--white">
+  <a href="#" class=.input-text btn--gray">
+  <a href="#" class=.input-text btn--gray-dark">
+  <a href="#" class=.input-text btn--gray-border">
+  <a href="#" class=.input-text btn--blue">
 
 */
 
 /* BLACK & WHITE */
 
-.btn--black,
-.btn--black:link,
-.btn--black:visited {
+.input-text--black {
   color: #fff;
   background-color: #111;
 }
 
-.btn--black:hover,
-.btn--black:focus {
+.input-text--black:hover,
+.input-text--black:focus {
   color: #fff;
   background-color: #444;
   border-color: #444;
 }
 
-.btn--black:active {
+.input-text--black:active {
   color: #fff;
   background-color: #999;
   border-color: #999;
 }
 
 
-.btn--white,
-.btn--white:link,
-.btn--white:visited {
+.input-text--white {
   color: #111;
   background-color: #fff;
 }
 
-.btn--white:hover,
-.btn--white:focus {
+.input-text--white:hover,
+.input-text--white:focus {
   color: #111;
   background-color: rgba(255,255,255,.7);
   border-color: rgba(255,255,255,.7);
 }
 
-.btn--white:active {
+.input-text--white:active {
   color: #111;
   background-color: rgba(255,255,255,.9);
   border-color: rgba(255,255,255,.9);
@@ -153,61 +144,51 @@
 
 /* Gray */
 
-.btn--gray:link,
-.btn--gray:visited {
+.input-text--gray {
   background-color: #f0f0f0;
   border-color: #f0f0f0;
   color: #555;
 }
 
-.btn--gray:hover,
-.btn--gray:focus {
+.input-text--gray:hover,
+.input-text--gray:focus {
   background-color: #ddd;
   border-color: #ddd;
   color: #444;
 }
 
-.btn--gray:active {
+.input-text--gray:active {
   background-color: #ccc;
   border-color: #ccc;
   color: #444;
 }
 
-.btn--gray-border:link,
-.btn--gray-border:visited {
-  background-color: #fff;
-  border-color: #555;
-  border-width: 2px;
-  color: #555;
-}
-
-.btn--gray-border:hover,
-.btn--gray-border:focus {
+.input-text--gray-border:hover,
+.input-text--gray-border:focus {
   background-color: #fff;
   border-color: #ddd;
   color: #777;
 }
 
-.btn--gray-border:active {
+.input-text--gray-border:active {
   background-color: #ccc;
   border-color: #ccc;
   color: #444;
 }
 
-.btn--gray-dark:link,
-.btn--gray-dark:visited {
+.input-text--gray-dark {
   background-color: #555;
   color: #eee;
 }
 
-.btn--gray-dark:hover,
-.btn--gray-dark:focus {
+.input-text--gray-dark:hover,
+.input-text--gray-dark:focus {
   background-color: #333;
   border-color: #333;
   color: #eee;
 }
 
-.btn--gray-dark:active {
+.input-text--gray-dark:active {
   background-color: #777;
   border-color: #777;
   color: #eee;
@@ -216,25 +197,19 @@
 
 /* BLUE */
 
-.btn--blue,
-.btn--blue:link,
-.btn--blue:visited {
+.input-text--blue {
   color: #fff;
   background-color: #0074D9;
 }
 
-.btn--blue {
- border-color: #0074D9;
-}
-
-.btn--blue:hover,
-.btn--blue:focus {
+.input-text--blue:hover,
+.input-text--blue:focus {
   color: #fff!important;
   background-color: #0063aa;
   border-color: #0063aa;
 }
 
-.btn--blue:active {
+.input-text--blue:active {
   color: #fff;
   background-color: #001F3F;
   border-color: #001F3F;
@@ -243,7 +218,7 @@
 /* Keep it mobile-first and responsive */
 
 @media screen and (min-width: 32em) {
-  .btn--full {
+  .input-text--full {
     max-width: 16em!important;
   }
 }
