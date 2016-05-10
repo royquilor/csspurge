@@ -43,6 +43,10 @@ tr:hover svg,
    background-color: $black;
 }
 
+.table-casestudy tr:hover td {
+color: $black;
+}
+
 .league th span {
     position: absolute;
     right: -10px;
