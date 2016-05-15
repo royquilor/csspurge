@@ -56,6 +56,11 @@ color: $black;
     top: 5px;
 }
 
+.league th {
+border-bottom: 1px solid #cfcfcf;
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
 .asc span,
 .desc span {
     background: url("../i/chevron-down.svg") no-repeat 0 0;

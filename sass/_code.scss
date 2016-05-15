@@ -15,8 +15,7 @@ code,
 pre,
 samp,
 kbd {
-    font-family: Roboto Mono, Source Code Pro, Menlo, Consolas, Liberation Mono, monospace;
-    // font-family: 'Anonymous Pro';
+    font-family: Menlo, Consolas, Liberation Mono, monospace;
     font-size: .875rem;
     line-height: 1.5;
     font-weight: 400;
@@ -40,9 +39,6 @@ pre {
 }
 
 header {
-    // background: url(../i/old/1.jpg) repeat-x 0 0;
-    // background-size:cover;
-    // position: relative;
     overflow: hidden;
 }
 
@@ -57,47 +53,4 @@ header div {
     position: relative;
 }
 
-.color-overlay {
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
 
-background: #0099F7;
-background: linear-gradient(to bottom, #0099F7 , #F11712);
-z-index: 99;
-// opacity: .8;
-background: #e53935; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #e53935 , #e35d5b); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #e53935 , #e35d5b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
-.terminal {
-    position: relative;
-    display: block;
-    margin-top:20px;
-    padding: 1rem 0;
-}
-
-.terminal::before {
-    content: "";
-    display: block;
-    background: #eee;
-
-
-
-background: #ddd6f3; /* fallback for old browsers */
-//background: -webkit-linear-gradient(to bottom, #ddd6f3 , #faaca8); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #ecebec , #e1dfe1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    height: 20px;
-    top: -20px;
-    width: 100%;
-    position: absolute;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-
-
-}
