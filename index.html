@@ -531,12 +531,15 @@
 <!--script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script-->
 <script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="js/atoms/purge-atoms.js"></script>
-<script src="js/atoms/stackoverflow-atoms.js"></script>
-<script src="js/atoms/pinterest-atoms.js"></script>
-<script src="js/atoms/airbnb-atoms.js"></script>
-<script src="js/atoms/medium-atoms.js"></script>
-<script src="js/atoms/tachyons-atoms.js"></script>
+<script src="js/atoms/atoms.js"></script>
+<script>
+    createAtoms("purge-atoms", 1440, 600, 2016, "rgb(241,23,18)");
+    createAtoms("stackoverflow-atoms", 80, 80, 600, "rgb(254,122,21)");
+    createAtoms("pinterest-atoms", 80, 80, 1180, "rgb(189,8,28)");
+    createAtoms("airbnb-atoms", 80, 80, 356, "rgb(253,92,99)");
+    createAtoms("medium-atoms", 80, 80, 674, "rgb(47,184,139)");
+    createAtoms("tachyons-atoms", 80, 80, 40, "rgb(0,153,247)");
+</script>
 <script src="https://fb.me/react-15.0.1.js"></script>
 <script src="https://fb.me/react-dom-15.0.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
