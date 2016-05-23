@@ -86,6 +86,10 @@ var options = {
   valueNames: ['lp', 'ls', 'lf', 'lc', 'lfs', 'lff', 'lsp', 'lmq', 'lst', 'lsl', 'lfskb', 'lts']
 };
 
+
 var leagueList = new List('component-league', options);
 
+/*
+var leagueList = new List('csspurge-league', options);
+*/
 
