@@ -14,7 +14,7 @@ caption {
 
 td,
 th {
-    padding: .3rem 1rem .3rem .5rem;
+    padding: .3rem 1.4rem .3rem .5rem;
     text-align: right;
     font-size: .875rem;
 }
@@ -23,9 +23,10 @@ tr {
     cursor: pointer;
 }
 
-td {
+/* td {
     padding-right: 1.2rem;
-}
+}*/
+
 /* uncss:ignore */
 tr:hover td,
 .selected td,
@@ -49,7 +50,7 @@ color: $black;
 
 .league th span {
     position: absolute;
-    right: -10px;
+    right: -15px;
     display: block;
     width: 10px;
     height: 10px;
@@ -89,7 +90,7 @@ tr:nth-child(even) td {
 .league th button {
     background: $white;
     border: 0;
-    padding: 0 .2rem 0 0;
+    padding: 0;
     margin: 0;
     font-weight: 500;
     width: 100%;
