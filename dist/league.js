@@ -22,7 +22,7 @@ var Progress = React.createClass({
         ),
         React.createElement(
           "dl",
-          { className: "dib w-30 w-20-ns" },
+          { className: "dib w-33 w-20-ns" },
           React.createElement(
             "dt",
             { className: "f6 f5-ns b ml0" },
@@ -36,7 +36,7 @@ var Progress = React.createClass({
         ),
         React.createElement(
           "dl",
-          { className: "dib w-30 w-20-ns" },
+          { className: "dib w-33 w-20-ns" },
           React.createElement(
             "dt",
             { className: "f6 f5-ns b ml0" },
@@ -50,7 +50,7 @@ var Progress = React.createClass({
         ),
         React.createElement(
           "dl",
-          { className: "dib w-30 w-20-ns" },
+          { className: "dib w-33 w-20-ns" },
           React.createElement(
             "dt",
             { className: "f6 f5-ns b ml0" },
@@ -64,7 +64,7 @@ var Progress = React.createClass({
         ),
         React.createElement(
           "dl",
-          { className: "dib w-30 w-20-ns" },
+          { className: "dib w-33 w-20-ns" },
           React.createElement(
             "dt",
             { className: "f6 f5-ns b ml0" },
@@ -78,7 +78,7 @@ var Progress = React.createClass({
         ),
         React.createElement(
           "dl",
-          { className: "dib w-30 w-20-ns" },
+          { className: "dib w-33 w-20-ns" },
           React.createElement(
             "dt",
             { className: "f6 f5-ns b ml0" },
@@ -92,7 +92,7 @@ var Progress = React.createClass({
         ),
         React.createElement(
           "dl",
-          { className: "dib w-30 w-20-ns" },
+          { className: "dib w-33 w-20-ns" },
           React.createElement(
             "dt",
             { className: "f6 f5-ns b ml0" },
@@ -106,7 +106,7 @@ var Progress = React.createClass({
         ),
         React.createElement(
           "dl",
-          { className: "dib w-30 w-20-ns" },
+          { className: "dib w-33 w-20-ns" },
           React.createElement(
             "dt",
             { className: "f6 f5-ns b ml0" },
@@ -120,7 +120,7 @@ var Progress = React.createClass({
         ),
         React.createElement(
           "dl",
-          { className: "dib w-30 w-20-ns" },
+          { className: "dib w-33 w-20-ns" },
           React.createElement(
             "dt",
             { className: "f6 f5-ns b ml0" },
@@ -134,7 +134,7 @@ var Progress = React.createClass({
         ),
         React.createElement(
           "dl",
-          { className: "dib w-30 w-20-ns" },
+          { className: "dib w-33 w-20-ns" },
           React.createElement(
             "dt",
             { className: "f6 f5-ns b ml0" },
@@ -212,7 +212,7 @@ var ProgressList = React.createClass({
       { className: "ph3 ph5-ns" },
       React.createElement(
         "h2",
-        { className: "mv5" },
+        { className: "f5 tracked ttu mv3 mv5-ns" },
         "Css Stats"
       ),
       products

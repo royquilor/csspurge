@@ -5,39 +5,39 @@ var Progress = React.createClass({
 <section className={this.props.classname}>
 <div className="pv3 pv5-ns">
 <h2 className="mb4"><a href={this.props.link}>{this.props.name}</a></h2>
-<dl className="dib w-30 w-20-ns">
+<dl className="dib w-33 w-20-ns">
  <dt className="f6 f5-ns b ml0">Floats</dt>
  <dd className="f3 f2-ns b ml0">{this.props.floats}</dd>
 </dl>
-<dl className="dib w-30 w-20-ns">
+<dl className="dib w-33 w-20-ns">
  <dt className="f6 f5-ns b ml0">Unique Colors</dt>
  <dd className="f3 f2-ns b ml0">{this.props.uniquecolors}</dd>
 </dl>
-<dl className="dib w-30 w-20-ns">
+<dl className="dib w-33 w-20-ns">
  <dt className="f6 f5-ns b ml0">Font Sizes</dt>
  <dd className="f3 f2-ns b ml0">{this.props.fontsizes}</dd>
 </dl>
-<dl className="dib w-30 w-20-ns">
+<dl className="dib w-33 w-20-ns">
  <dt className="f6 f5-ns b ml0">Font Families</dt>
  <dd className="f3 f2-ns b ml0">{this.props.fontfamilies}</dd>
 </dl>
-<dl className="dib w-30 w-20-ns">
+<dl className="dib w-33 w-20-ns">
  <dt className="f6 f5-ns b ml0">Specificity</dt>
  <dd className="f3 f2-ns b ml0">{this.props.specificity}</dd>
 </dl>
-<dl className="dib w-30 w-20-ns">
+<dl className="dib w-33 w-20-ns">
  <dt className="f6 f5-ns b ml0">Media Queries</dt>
  <dd className="f3 f2-ns b ml0">{this.props.mediaqueries}</dd>
 </dl>
-<dl className="dib w-30 w-20-ns">
+<dl className="dib w-33 w-20-ns">
  <dt className="f6 f5-ns b ml0">Style Tags</dt>
  <dd className="f3 f2-ns b ml0">{this.props.styletags}</dd>
 </dl>
-<dl className="dib w-30 w-20-ns">
+<dl className="dib w-33 w-20-ns">
  <dt className="f6 f5-ns b ml0">Style Links</dt>
  <dd className="f3 f2-ns b ml0">{this.props.stylelinks}</dd>
 </dl>
-<dl className="dib w-30 w-20-ns">
+<dl className="dib w-33 w-20-ns">
  <dt className="f6 f5-ns b ml0">File Size kb</dt>
  <dd className="f3 f2-ns b ml0">{this.props.filesizekb}</dd>
 </dl>
@@ -140,7 +140,7 @@ var ProgressList = React.createClass({
 
     return (
     <div className="ph3 ph5-ns"> 
-    <h2 className="mv5">Css Stats</h2>
+    <h2 className="f5 tracked ttu mv3 mv5-ns">Css Stats</h2>
     {products}
     </div>
      );
