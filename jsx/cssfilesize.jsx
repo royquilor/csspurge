@@ -29,7 +29,6 @@ var ProgressList = React.createClass({
 {name: "IMDB", value: 170},
 {name: "CSS-Tricks", value: 173},
 {name: "Slack", value: 188},
-{name: "Marketinvoice", value: 200},
 {name: "UFC", value: 217},
 {name: "Paypal", value: 244},
 {name: "Dropbox", value: 272},

@@ -2,25 +2,47 @@ var Progress = React.createClass({
   
   render: function() {
     return (
-<tr className={this.props.classname}>
-<td className="ls tl">{this.props.name}</td>
-<td className="lf">{this.props.floats}</td>
-<td className="lc">{this.props.uniquecolors}</td>
-<td className="lfs">{this.props.fontsizes}</td>
-<td className="lff">{this.props.fontfamilies}</td>
-<td className="lsp">{this.props.specificity}</td>
-<td className="lmq">{this.props.mediaqueries}</td>
-<td className="lst">{this.props.styletags}</td>
-<td className="lsl">{this.props.stylelinks}</td>
-<td>
-<a href={this.props.link}>
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="13.636" viewBox="80 96 15 13.636" enable-background="new 80 96 15 13.636">
-                      <title>CSS stats</title>
-                      <path d="M80 106.909h2.727v2.727h-2.727zM84.091 104.182h2.728v5.455h-2.728zM88.182 100.091h2.728v9.545h-2.728zM92.273 96h2.727v13.636h-2.727z"/>
-                  </svg>
-</a>
-</td>
-</tr>
+<section className={this.props.classname}>
+<div className="pv3 pv5-ns">
+<h2 className="mb4"><a href={this.props.link}>{this.props.name}</a></h2>
+<dl className="dib w-30 w-20-ns">
+ <dt className="f6 f5-ns b ml0">Floats</dt>
+ <dd className="f3 f2-ns b ml0">{this.props.floats}</dd>
+</dl>
+<dl className="dib w-30 w-20-ns">
+ <dt className="f6 f5-ns b ml0">Unique Colors</dt>
+ <dd className="f3 f2-ns b ml0">{this.props.uniquecolors}</dd>
+</dl>
+<dl className="dib w-30 w-20-ns">
+ <dt className="f6 f5-ns b ml0">Font Sizes</dt>
+ <dd className="f3 f2-ns b ml0">{this.props.fontsizes}</dd>
+</dl>
+<dl className="dib w-30 w-20-ns">
+ <dt className="f6 f5-ns b ml0">Font Families</dt>
+ <dd className="f3 f2-ns b ml0">{this.props.fontfamilies}</dd>
+</dl>
+<dl className="dib w-30 w-20-ns">
+ <dt className="f6 f5-ns b ml0">Specificity</dt>
+ <dd className="f3 f2-ns b ml0">{this.props.specificity}</dd>
+</dl>
+<dl className="dib w-30 w-20-ns">
+ <dt className="f6 f5-ns b ml0">Media Queries</dt>
+ <dd className="f3 f2-ns b ml0">{this.props.mediaqueries}</dd>
+</dl>
+<dl className="dib w-30 w-20-ns">
+ <dt className="f6 f5-ns b ml0">Style Tags</dt>
+ <dd className="f3 f2-ns b ml0">{this.props.styletags}</dd>
+</dl>
+<dl className="dib w-30 w-20-ns">
+ <dt className="f6 f5-ns b ml0">Style Links</dt>
+ <dd className="f3 f2-ns b ml0">{this.props.stylelinks}</dd>
+</dl>
+<dl className="dib w-30 w-20-ns">
+ <dt className="f6 f5-ns b ml0">File Size kb</dt>
+ <dd className="f3 f2-ns b ml0">{this.props.filesizekb}</dd>
+</dl>
+</div>
+</section>
    );
   }
 });
@@ -112,31 +134,16 @@ var ProgressList = React.createClass({
   render: function() {
     var products = this.state.productList.map(function(product) {
       return (
-        <Progress classname={product.classname} position={product.position} name={product.name} casestudy={product.casestudy} floats={product.floats} uniquecolors={product.uniquecolors} fontsizes={product.fontsizes} fontfamilies={product.fontfamilies} specificity={product.specificity} mediaqueries={product.mediaqueries} styletags={product.styletags} stylelinks={product.stylelinks} filesizekb={product.filesizekb} totalscore={product.totalscore} link={product.link}/>
+        <Progress classname={product.classname} name={product.name} casestudy={product.casestudy} floats={product.floats} uniquecolors={product.uniquecolors} fontsizes={product.fontsizes} fontfamilies={product.fontfamilies} specificity={product.specificity} mediaqueries={product.mediaqueries} styletags={product.styletags} stylelinks={product.stylelinks} filesizekb={product.filesizekb} link={product.link}/>
         );
     });
 
     return (
-      <table className="bb b--light-gray">
-      <thead>
-      <tr>
-        <th><button className="sort tl" data-sort="ls">Name <span></span></button></th>
-        <th><button className="sort tr" data-sort="lf">Floats <span></span></button></th>
-        <th><button className="sort tr" data-sort="lc">Unique Colors <span></span></button></th>
-        <th><button className="sort tr" data-sort="lfs">Font Sizes <span></span></button></th>
-        <th><button className="sort tr" data-sort="lff">Font Families <span></span></button></th>
-        <th><button className="sort tr" data-sort="lsp">Specificity <span></span></button></th>
-        <th><button className="sort tr" data-sort="lmq">Media Queries <span></span></button></th>
-        <th><button className="sort tr" data-sort="lst">Style Tags <span></span></button></th>
-        <th><button className="sort tr" data-sort="lsl">Style Links <span></span></button></th>
-                      <th></th>
-      </tr>
-      </thead>
-      <tbody className="list">
-        {products}
-      </tbody>
-</table>
-    );
+    <div className="ph3 ph5-ns"> 
+    <h2 className="mv5">Css Stats</h2>
+    {products}
+    </div>
+     );
   }
 });
 

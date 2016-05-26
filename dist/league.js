@@ -6,68 +6,144 @@ var Progress = React.createClass({
 
   render: function render() {
     return React.createElement(
-      "tr",
+      "section",
       { className: this.props.classname },
       React.createElement(
-        "td",
-        { className: "ls tl" },
-        this.props.name
-      ),
-      React.createElement(
-        "td",
-        { className: "lf" },
-        this.props.floats
-      ),
-      React.createElement(
-        "td",
-        { className: "lc" },
-        this.props.uniquecolors
-      ),
-      React.createElement(
-        "td",
-        { className: "lfs" },
-        this.props.fontsizes
-      ),
-      React.createElement(
-        "td",
-        { className: "lff" },
-        this.props.fontfamilies
-      ),
-      React.createElement(
-        "td",
-        { className: "lsp" },
-        this.props.specificity
-      ),
-      React.createElement(
-        "td",
-        { className: "lmq" },
-        this.props.mediaqueries
-      ),
-      React.createElement(
-        "td",
-        { className: "lst" },
-        this.props.styletags
-      ),
-      React.createElement(
-        "td",
-        { className: "lsl" },
-        this.props.stylelinks
-      ),
-      React.createElement(
-        "td",
-        null,
+        "div",
+        { className: "pv3 pv5-ns" },
         React.createElement(
-          "a",
-          { href: this.props.link },
+          "h2",
+          { className: "mb4" },
           React.createElement(
-            "svg",
-            { xmlns: "http://www.w3.org/2000/svg", width: "15", height: "13.636", viewBox: "80 96 15 13.636", "enable-background": "new 80 96 15 13.636" },
-            React.createElement(
-              "title",
-              null,
-              "CSS stats"
-            ),
-            React.createElement("path", { d: "M80 106.909h2.727v2.727h-2.727zM84.091 104.182h2.728v5.455h-2.728zM88.182 100.091h2.728v9.545h-2.728zM92.273 96h2.727v13.636h-2.727z" })
+            "a",
+            { href: this.props.link },
+            this.props.name
+          )
+        ),
+        React.createElement(
+          "dl",
+          { className: "dib w-30 w-20-ns" },
+          React.createElement(
+            "dt",
+            { className: "f6 f5-ns b ml0" },
+            "Floats"
+          ),
+          React.createElement(
+            "dd",
+            { className: "f3 f2-ns b ml0" },
+            this.props.floats
+          )
+        ),
+        React.createElement(
+          "dl",
+          { className: "dib w-30 w-20-ns" },
+          React.createElement(
+            "dt",
+            { className: "f6 f5-ns b ml0" },
+            "Unique Colors"
+          ),
+          React.createElement(
+            "dd",
+            { className: "f3 f2-ns b ml0" },
+            this.props.uniquecolors
+          )
+        ),
+        React.createElement(
+          "dl",
+          { className: "dib w-30 w-20-ns" },
+          React.createElement(
+            "dt",
+            { className: "f6 f5-ns b ml0" },
+            "Font Sizes"
+          ),
+          React.createElement(
+            "dd",
+            { className: "f3 f2-ns b ml0" },
+            this.props.fontsizes
+          )
+        ),
+        React.createElement(
+          "dl",
+          { className: "dib w-30 w-20-ns" },
+          React.createElement(
+            "dt",
+            { className: "f6 f5-ns b ml0" },
+            "Font Families"
+          ),
+          React.createElement(
+            "dd",
+            { className: "f3 f2-ns b ml0" },
+            this.props.fontfamilies
+          )
+        ),
+        React.createElement(
+          "dl",
+          { className: "dib w-30 w-20-ns" },
+          React.createElement(
+            "dt",
+            { className: "f6 f5-ns b ml0" },
+            "Specificity"
+          ),
+          React.createElement(
+            "dd",
+            { className: "f3 f2-ns b ml0" },
+            this.props.specificity
+          )
+        ),
+        React.createElement(
+          "dl",
+          { className: "dib w-30 w-20-ns" },
+          React.createElement(
+            "dt",
+            { className: "f6 f5-ns b ml0" },
+            "Media Queries"
+          ),
+          React.createElement(
+            "dd",
+            { className: "f3 f2-ns b ml0" },
+            this.props.mediaqueries
+          )
+        ),
+        React.createElement(
+          "dl",
+          { className: "dib w-30 w-20-ns" },
+          React.createElement(
+            "dt",
+            { className: "f6 f5-ns b ml0" },
+            "Style Tags"
+          ),
+          React.createElement(
+            "dd",
+            { className: "f3 f2-ns b ml0" },
+            this.props.styletags
+          )
+        ),
+        React.createElement(
+          "dl",
+          { className: "dib w-30 w-20-ns" },
+          React.createElement(
+            "dt",
+            { className: "f6 f5-ns b ml0" },
+            "Style Links"
+          ),
+          React.createElement(
+            "dd",
+            { className: "f3 f2-ns b ml0" },
+            this.props.stylelinks
+          )
+        ),
+        React.createElement(
+          "dl",
+          { className: "dib w-30 w-20-ns" },
+          React.createElement(
+            "dt",
+            { className: "f6 f5-ns b ml0" },
+            "File Size kb"
+          ),
+          React.createElement(
+            "dd",
+            { className: "f3 f2-ns b ml0" },
+            this.props.filesizekb
           )
         )
       )
@@ -128,116 +204,18 @@ var ProgressList = React.createClass({
 
   render: function render() {
     var products = this.state.productList.map(function (product) {
-      return React.createElement(Progress, { classname: product.classname, position: product.position, name: product.name, casestudy: product.casestudy, floats: product.floats, uniquecolors: product.uniquecolors, fontsizes: product.fontsizes, fontfamilies: product.fontfamilies, specificity: product.specificity, mediaqueries: product.mediaqueries, styletags: product.styletags, stylelinks: product.stylelinks, filesizekb: product.filesizekb, totalscore: product.totalscore, link: product.link });
+      return React.createElement(Progress, { classname: product.classname, name: product.name, casestudy: product.casestudy, floats: product.floats, uniquecolors: product.uniquecolors, fontsizes: product.fontsizes, fontfamilies: product.fontfamilies, specificity: product.specificity, mediaqueries: product.mediaqueries, styletags: product.styletags, stylelinks: product.stylelinks, filesizekb: product.filesizekb, link: product.link });
     });
 
     return React.createElement(
-      "table",
-      { className: "bb b--light-gray" },
+      "div",
+      { className: "ph3 ph5-ns" },
       React.createElement(
-        "thead",
-        null,
-        React.createElement(
-          "tr",
-          null,
-          React.createElement(
-            "th",
-            null,
-            React.createElement(
-              "button",
-              { className: "sort tl", "data-sort": "ls" },
-              "Name ",
-              React.createElement("span", null)
-            )
-          ),
-          React.createElement(
-            "th",
-            null,
-            React.createElement(
-              "button",
-              { className: "sort tr", "data-sort": "lf" },
-              "Floats ",
-              React.createElement("span", null)
-            )
-          ),
-          React.createElement(
-            "th",
-            null,
-            React.createElement(
-              "button",
-              { className: "sort tr", "data-sort": "lc" },
-              "Unique Colors ",
-              React.createElement("span", null)
-            )
-          ),
-          React.createElement(
-            "th",
-            null,
-            React.createElement(
-              "button",
-              { className: "sort tr", "data-sort": "lfs" },
-              "Font Sizes ",
-              React.createElement("span", null)
-            )
-          ),
-          React.createElement(
-            "th",
-            null,
-            React.createElement(
-              "button",
-              { className: "sort tr", "data-sort": "lff" },
-              "Font Families ",
-              React.createElement("span", null)
-            )
-          ),
-          React.createElement(
-            "th",
-            null,
-            React.createElement(
-              "button",
-              { className: "sort tr", "data-sort": "lsp" },
-              "Specificity ",
-              React.createElement("span", null)
-            )
-          ),
-          React.createElement(
-            "th",
-            null,
-            React.createElement(
-              "button",
-              { className: "sort tr", "data-sort": "lmq" },
-              "Media Queries ",
-              React.createElement("span", null)
-            )
-          ),
-          React.createElement(
-            "th",
-            null,
-            React.createElement(
-              "button",
-              { className: "sort tr", "data-sort": "lst" },
-              "Style Tags ",
-              React.createElement("span", null)
-            )
-          ),
-          React.createElement(
-            "th",
-            null,
-            React.createElement(
-              "button",
-              { className: "sort tr", "data-sort": "lsl" },
-              "Style Links ",
-              React.createElement("span", null)
-            )
-          ),
-          React.createElement("th", null)
-        )
+        "h2",
+        { className: "mv5" },
+        "Css Stats"
       ),
-      React.createElement(
-        "tbody",
-        { className: "list" },
-        products
-      )
+      products
     );
   }
 });
